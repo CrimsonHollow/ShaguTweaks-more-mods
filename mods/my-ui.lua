@@ -57,7 +57,7 @@ module.enable = function(self)
         -- Buffs start with TemporaryEnchantFrame
         -- Debuffs are aligned underneath the TemporaryEnchantFrame    
         TemporaryEnchantFrame:ClearAllPoints()
-        TemporaryEnchantFrame:SetPoint("TOPLEFT", MinimapCluster, -15, -28)
+        TemporaryEnchantFrame:SetPoint("TOPLEFT", UIParent, -15, -28)
     
         -- prevent TemporaryEnchantFrame from moving
         TemporaryEnchantFrame.ClearAllPoints = function() end
@@ -79,7 +79,7 @@ module.enable = function(self)
         ChatFrame1:SetWidth(w)
         ChatFrame1:SetHeight(h)
         ChatFrame1:ClearAllPoints()
-        ChatFrame1:SetPoint("BOTTOMRIGHT", "UIParent", "BOTTOMRIGHT", -x, y)
+        ChatFrame1:SetPoint("BOTTOMRIGHT", "UIParent", "BOTTOMRIGHT", -x/2, y)
 
         local found
         local frame
