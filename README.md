@@ -19,22 +19,37 @@ Code from [zUI](https://github.com/Ko0z/zUI)
 
 
 - **Dragonflight Gryphons**
-  *Changes the vanilla gryphons to the DF ones. USE ONLY ONE OF THESE*
+  *Changes the vanilla gryphons to the DF ones. USE ONLY ONE OF THESE MODULES*
 
  - **Dragonflight Gryphons Dark**
-  *Changes the vanilla gryphons to the DF ones with dark colours. USE ONLY ONE OF THESE*
+  *Changes the vanilla gryphons to the DF ones with dark colours. USE ONLY ONE OF THESE MODULES*
 
 - **Dragonflight Wyverns**
-  *Changes the vanilla wyverns to the DF ones. USE ONLY ONE OF THESE*
+  *Changes the vanilla wyverns to the DF ones. USE ONLY ONE OF THESE MODULES*
 
 - **Dragonflight Wyverns Dark**
-  *Changes the vanilla wyverns to the DF ones with dark colours. USE ONLY ONE OF THESE*
+  *Changes the vanilla wyverns to the DF ones with dark colours. USE ONLY ONE OF THESE MODULES*
 
 - **Dragonflight Castbar**
   *Changes the vanilla castbar to a dragonflight themed one*
 
 - **My UI**
-  *Changes the position of stuff to where i want them.DO NOT USE WITH CENTRAL UI*
+  *Changes the position of stuff to where i want them.*
+  *(Minor issue with some chat windows being too big. U can unlock them and resize them urself).(Minor issue with debuffs being next to the minimap, U can move them using the Movable Unitframes Extended module*
+  *DO NOT USE WITH CENTRAL UI*
 
 - **Reduced Actionbar Plus**
-  *Changes the position of the actionbars to where i want them. Also. DO NOT USE WITH REDUCED ACTIONBAR*
+  *Changes the position of the actionbars to where i want them. Also attaches buffs to Actionbars (Will be made a seperate option down the line) . DO NOT USE WITH REDUCED ACTIONBAR MODULE*
+
+- **Restyle UI Override**
+  *Overrides some code to be used with the UnitFrame Big health Module*
+
+- **Restyle UI Deli**
+  *My own version of the restyle module.DO NOT USE WITH RESTYLE UI MOD AT THE SAME TIME*
+
+## Known Issues
+
+*Reputation tracking. If u care about tracking rep do not use Reduced Actionbar Plus atm.
+Always show actionbars. It will mess with Reduced Actionbar Plus. A workaround is to go to the lines 195 and 212 and change the SetAlpha from 0 to 1.
+Pet bars being gone. If its a temporary edit make a macro with with /script PetActionBarFrame:Show() else if u want it to be perma on go to Reduced Actionbar Plus on line 139 and delete the line. (will mess with ur buffs position)
+Weird party/raid frames. Im a solo player doing the hardcore challenge. I havent grouped enough to test/modify this option enough. Dont use my mods if there is a problem with that.*
