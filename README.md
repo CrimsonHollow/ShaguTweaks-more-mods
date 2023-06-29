@@ -49,7 +49,10 @@ Code from [zUI](https://github.com/Ko0z/zUI)
 
 ## Known Issues
 
-*Reputation tracking. If u care about tracking rep do not use Reduced Actionbar Plus atm.
-Always show actionbars. It will mess with Reduced Actionbar Plus. A workaround is to go to the lines 195 and 212 and change the SetAlpha from 0 to 1.
-Pet bars being gone. If its a temporary edit make a macro with with /script PetActionBarFrame:Show() else if u want it to be perma on go to Reduced Actionbar Plus on line 139 and delete the line. (will mess with ur buffs position)
-Weird party/raid frames. Im a solo player doing the hardcore challenge. I havent grouped enough to test/modify this option enough. Dont use my mods if there is a problem with that.*
+*Reputation tracking. If u care about tracking rep do not use Reduced Actionbar Plus atm.*
+
+*Always show actionbars. It will mess with Reduced Actionbar Plus. A workaround is to go to the lines 195 and 212 and change the SetAlpha from 0 to 1.*
+
+*Pet bars being gone. If its a temporary edit make a macro with with /script PetActionBarFrame:Show() else if u want it to be perma on go to Reduced Actionbar Plus on line 139 and delete the line. (will mess with ur buffs position)*
+
+*Weird party/raid frames. Im a solo player doing the hardcore challenge. I havent grouped enough to test/modify this option enough. Dont use my mods if there is a problem with that.*
