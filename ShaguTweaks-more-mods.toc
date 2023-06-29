@@ -1,0 +1,19 @@
+## Interface: 11200
+## Title: |cffffcc00Shagu|cffffffffTweaks-More-Mods
+## Author: Delirium / Arkoudokinigos
+## Notes: Adds additional vanilla 1.12 custom mods to ShaguTweaks.
+## Version: GIT
+## Dependencies: ShaguTweaks
+
+# ShaguTweaks-More-Mods
+
+mods\my-ui.lua
+mods\dragonflight-gryphons.lua
+mods\dragonflight-gryphons-dark.lua
+mods\dragonflight-wyverns.lua
+mods\dragonflight-wyverns-dark.lua
+mods\reduced-actionbar-plus.lua
+mods\dragonflight-castbar.lua
+mods\buffs-above-actionbar.lua
+mods\restyle-ui-deli.lua
+mods\restyle-override.lua
