@@ -12,7 +12,7 @@ Code from [zUI](https://github.com/Ko0z/zUI)
 
 ## Installation
 #### This addon requires [ShaguTweaks](https://shagu.org/ShaguTweaks/) and [ShaguTweaks-mods](https://github.com/GryllsAddons/ShaguTweaks-mods) to be installed.    
-#### To use the gryphon/wyverns module use the dark-ui-elements in the optional folder to replace the file in ShaguTweaks-mods.
+#### To use the gryphon/wyverns module use the dark-ui-elements in the optional folder to replace the file in ShaguTweaks/mods.
 #### To use the DF Castbar module make sure u arent using improved castbard module from ShaguTweaks-mods and place the folder named CastingBar from the optional folder to your interface folder.
 
 ## Mods
