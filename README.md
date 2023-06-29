@@ -56,3 +56,16 @@ Code from [zUI](https://github.com/Ko0z/zUI)
 *Pet bars being gone. If its a temporary edit make a macro with with /script PetActionBarFrame:Show() else if u want it to be perma on go to Reduced Actionbar Plus on line 139 and delete the line. (will mess with ur buffs position)*
 
 *Weird party/raid frames. Im a solo player doing the hardcore challenge. I havent grouped enough to test/modify this option enough. Dont use my mods if there is a problem with that.*
+
+## Screenshots
+
+![image](https://github.com/CrimsonHollow/ShaguTweaks-more-mods/assets/22963563/7f21241b-007e-4cc4-aff2-ead04f0f6f4a)
+
+![image](https://github.com/CrimsonHollow/ShaguTweaks-more-mods/assets/22963563/3dbd970f-f341-4e65-9b39-53242ec89942)
+
+![image](https://github.com/CrimsonHollow/ShaguTweaks-more-mods/assets/22963563/ab89e750-79dd-499b-a35b-04d90530c814)
+
+![image](https://github.com/CrimsonHollow/ShaguTweaks-more-mods/assets/22963563/e7e907c8-c06d-4fe3-a7f2-b2efeff73518)
+
+![image](https://github.com/CrimsonHollow/ShaguTweaks-more-mods/assets/22963563/cc9915ba-ae82-4d7b-9380-5c95e46a256b)
+
