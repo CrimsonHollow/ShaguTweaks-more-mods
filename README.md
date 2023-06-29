@@ -51,6 +51,8 @@ Code from [zUI](https://github.com/Ko0z/zUI)
 
 *Reputation tracking. If u care about tracking rep do not use Reduced Actionbar Plus atm.*
 
+*When u login ur bottom actionbar might be missing. Do /reload*
+
 *Always show actionbars. It will mess with Reduced Actionbar Plus. A workaround is to go to the lines 195 and 212 and change the SetAlpha from 0 to 1.*
 
 *Pet bars being gone. If its a temporary edit make a macro with with /script PetActionBarFrame:Show() else if u want it to be perma on go to Reduced Actionbar Plus on line 139 and delete the line. (will mess with ur buffs position)*
