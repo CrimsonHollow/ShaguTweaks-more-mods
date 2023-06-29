@@ -1,1 +1,31 @@
 # ShaguTweaks-more-mods
+
+This is mostly a bunch of settings that i personally use for ShaguTweaks but i thought it would be nice to share to others. Its finicky and not higly configurable but it might be of some use.
+
+## Credit
+Credit to [shagu](https://github.com/shagu)   
+Credit to [Grylls](https://github.com/GryllsAddons)
+Code from [ShaguTweaks](https://shagu.org/ShaguTweaks/)   
+Code from [ShaguTweaks-mods](https://github.com/GryllsAddons/ShaguTweaks-mods)
+Code from [pfUI](https://shagu.org/pfUI/)    
+Code from [zUI](https://github.com/Ko0z/zUI)
+
+## Installation
+#### This addon requires [ShaguTweaks](https://shagu.org/ShaguTweaks/) and [ShaguTweaks-mods](https://github.com/GryllsAddons/ShaguTweaks-mods) to be installed.    
+#### To use the gryphon/wyverns module use the dark-ui-elements in the optional folder to replace the file in ShaguTweaks-mods
+
+## Mods
+
+
+- **Dragonflight Gryphons**
+  *Changes the vanilla gryphons to the DF ones*
+
+ - **Dragonflight Gryphons Dark**
+  *Changes the vanilla gryphons to the DF ones with dark colours*
+
+- **Dragonflight Wyverns**
+  *Changes the vanilla wyverns to the DF ones*
+
+  - **Dragonflight Wyverns**
+  *Changes the vanilla wyverns to the DF ones*
+
