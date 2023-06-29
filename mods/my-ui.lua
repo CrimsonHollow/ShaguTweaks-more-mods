@@ -57,7 +57,7 @@ module.enable = function(self)
         -- Buffs start with TemporaryEnchantFrame
         -- Debuffs are aligned underneath the TemporaryEnchantFrame    
         TemporaryEnchantFrame:ClearAllPoints()
-        TemporaryEnchantFrame:SetPoint("TOPLEFT", UIParent, -15, -28)
+        TemporaryEnchantFrame:SetPoint("TOPRIGHT", UIParent, -15, 55)
     
         -- prevent TemporaryEnchantFrame from moving
         TemporaryEnchantFrame.ClearAllPoints = function() end
