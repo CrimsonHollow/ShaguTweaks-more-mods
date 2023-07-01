@@ -143,7 +143,20 @@ module.enable = function(self)
 	MultiBarBottomLeft:SetPoint("BOTTOM", MainMenuBar, "TOP", 3, -5)
 	ReputationWatchStatusBar:ClearAllPoints()
 	ReputationWatchStatusBar:SetPoint("BOTTOM", WorldFrame, "BOTTOM", 0, 13)
-	BonusActionBarFrame:Hide()
+	
+	BonusActionBarFrame:SetAlpha(0)
+	BonusActionButton1:SetAlpha(1)
+	BonusActionButton2:SetAlpha(1)
+	BonusActionButton3:SetAlpha(1)
+	BonusActionButton4:SetAlpha(1)
+	BonusActionButton5:SetAlpha(1)
+	BonusActionButton6:SetAlpha(1)
+	BonusActionButton7:SetAlpha(1)
+	BonusActionButton8:SetAlpha(1)
+	BonusActionButton9:SetAlpha(1)
+	BonusActionButton10:SetAlpha(1)
+	BonusActionButton11:SetAlpha(1)
+	BonusActionButton12:SetAlpha(1)
 	-- MainMenuBarLeftEndCap:ClearAllPoints()
 	-- MainMenuBarRightEndCap:ClearAllPoints()
 	-- MainMenuBarLeftEndCap:SetPoint("RIGHT", MainMenuBarArtFrame, "LEFT", 30, 20)
@@ -181,7 +194,7 @@ module.enable = function(self)
 	
 	-- add button border
     local _G = ShaguTweaks.GetGlobalEnv()
-    local actionBars = {'Action'}
+    local actionBars = {'Action' , 'BonusAction'}
     local f = CreateFrame("Frame", nil, UIParent)
     for k, v in pairs(actionBars) do
         for i = 1, NUM_ACTIONBAR_BUTTONS  do
@@ -198,7 +211,7 @@ module.enable = function(self)
 	
 	-- add button background
     local _G = ShaguTweaks.GetGlobalEnv()
-    local actionBars = {'Action'}
+    local actionBars = {'Action' , 'BonusAction'}
     local f = CreateFrame("Frame", nil, UIParent)
     for k, v in pairs(actionBars) do
         for i = 1, NUM_ACTIONBAR_BUTTONS  do
@@ -212,6 +225,8 @@ module.enable = function(self)
 		  button.bg:SetAlpha(0)
         end
     end
+	
+
     -- move castbar ontop of other bars
     local anchor = MainMenuBarArtFrame
     anchor = MultiBarBottomLeft:IsVisible() and MultiBarBottomLeft or anchor
