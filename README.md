@@ -59,6 +59,16 @@ Code from [zUI](https://github.com/Ko0z/zUI)
 
 *Weird party/raid frames. Im a solo player doing the hardcore challenge. I havent grouped enough to test/modify this option enough. Dont use my mods if there is a problem with that.*
 
+
+## My settings
+
+*After a few talks with people, because my addon isnt very modular or doesnt work well with others here are my settings to get something really close to what i use*
+
+![image](https://github.com/CrimsonHollow/ShaguTweaks-more-mods/assets/22963563/75888256-2c31-4967-9388-c851107b8bae)
+![image](https://github.com/CrimsonHollow/ShaguTweaks-more-mods/assets/22963563/8f205137-9daa-420b-8ded-557c13e6a36e)
+![image](https://github.com/CrimsonHollow/ShaguTweaks-more-mods/assets/22963563/7e1e6a40-e5b2-4cfe-aa66-d9e31f07a657)
+
+
 ## Screenshots
 
 ![image](https://github.com/CrimsonHollow/ShaguTweaks-more-mods/assets/22963563/7f21241b-007e-4cc4-aff2-ead04f0f6f4a)
@@ -70,4 +80,5 @@ Code from [zUI](https://github.com/Ko0z/zUI)
 ![image](https://github.com/CrimsonHollow/ShaguTweaks-more-mods/assets/22963563/e7e907c8-c06d-4fe3-a7f2-b2efeff73518)
 
 ![image](https://github.com/CrimsonHollow/ShaguTweaks-more-mods/assets/22963563/cc9915ba-ae82-4d7b-9380-5c95e46a256b)
+
 
