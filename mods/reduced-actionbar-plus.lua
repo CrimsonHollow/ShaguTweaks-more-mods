@@ -194,7 +194,7 @@ module.enable = function(self)
 	
 	-- add button border
     local _G = ShaguTweaks.GetGlobalEnv()
-    local actionBars = {'Action' , 'BonusAction'}
+    local actionBars = {'Action' , 'BonusAction', 'MultiBarBottomLeft'}
     local f = CreateFrame("Frame", nil, UIParent)
     for k, v in pairs(actionBars) do
         for i = 1, NUM_ACTIONBAR_BUTTONS  do
@@ -204,14 +204,14 @@ module.enable = function(self)
           button.bg:SetHeight(64)
           button.bg:SetPoint("CENTER", button, "CENTER",0 , 0)  
           button.bg:SetTexture("Interface\\Buttons\\UI-Quickslot2")
-          button.bg:SetVertexColor(1, 1, 1, 1)
-		  button.bg:SetAlpha(0)
-        end
+          button.bg:SetVertexColor(1, 1, 1, 0.4)
+		end
+		button:SetFrameStrata("LOW")
     end
 	
 	-- add button background
     local _G = ShaguTweaks.GetGlobalEnv()
-    local actionBars = {'Action' , 'BonusAction'}
+    local actionBars = {'Action' , 'BonusAction' , 'MultiBarBottomLeft'}
     local f = CreateFrame("Frame", nil, UIParent)
     for k, v in pairs(actionBars) do
         for i = 1, NUM_ACTIONBAR_BUTTONS  do
@@ -221,9 +221,9 @@ module.enable = function(self)
           button.bg:SetHeight(62)
           button.bg:SetPoint("CENTER", button, "CENTER",11 , -11)  
 		  button.bg:SetTexture("Interface\\Addons\\ShaguTweaks-more-mods\\img\\UI-Slot-background")
-          button.bg:SetVertexColor(1, 1, 1, 0.35)
-		  button.bg:SetAlpha(0)
-        end
+          button.bg:SetVertexColor(1, 1, 1, 0.3)
+		end
+		button:SetFrameStrata("BACKGROUND")
     end
 	
 
