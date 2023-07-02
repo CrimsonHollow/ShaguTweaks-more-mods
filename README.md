@@ -9,7 +9,6 @@ Credit to [Grylls](https://github.com/GryllsAddons)
 Credit to [Syiana](https://github.com/Syiana)   
 Code from [ShaguTweaks](https://shagu.org/ShaguTweaks/)    
 Code from [ShaguTweaks-mods](https://github.com/GryllsAddons/ShaguTweaks-mods)   
-Code from [SUI](https://github.com/Syiana/SUI)   
 Code from [pfUI](https://shagu.org/pfUI/)    
 Code from [zUI](https://github.com/Ko0z/zUI)
 
