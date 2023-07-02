@@ -30,7 +30,7 @@ module.enable = function(self)
     
     
         -- Party
-        local scale = 1.3        
+        local scale = 1.25        
         PartyMemberFrame1:SetClampedToScreen(true)
         PartyMemberFrame1:SetScale(scale)
         PartyMemberFrame2:SetScale(scale)
@@ -38,7 +38,8 @@ module.enable = function(self)
         PartyMemberFrame4:SetScale(scale)
 
         PartyMemberFrame1:ClearAllPoints()
-        PartyMemberFrame1:SetPoint("RIGHT", UIParent, "CENTER", -200, 50)
+        PartyMemberFrame1:SetPoint("RIGHT", UIParent, "CENTER", -230, 80)
+		-- PartyMemberFrame1:SetPoint("RIGHT", UIParent, "CENTER", -620, 390)
         -- PartyMemberFrame2/3/4 moves with PartyMemberFrame1
     end
     
@@ -50,7 +51,10 @@ module.enable = function(self)
         MinimapCluster:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", x, y)
         MinimapCluster.ClearAllPoints = function() end
         MinimapCluster.SetPoint = function() end
-		
+		DurabilityFrame:ClearAllPoints()
+		DurabilityFrame:SetPoint("TOPLEFT", Minimap , "TOPRIGHT", 200, -100)
+		QuestTimerFrame:ClearAllPoints()
+		QuestTimerFrame:SetPoint("TOP", Minimap , "TOP", 200, 100)
     end
     
     local function buffs()
