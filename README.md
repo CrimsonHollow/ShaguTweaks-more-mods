@@ -1,12 +1,15 @@
 # ShaguTweaks-more-mods
 
 This is mostly a bunch of settings that i personally use for ShaguTweaks but i thought it would be nice to share to others. Its finicky and not higly configurable but it might be of some use.
+Very inspired by SUI's aesthetic.
 
 ## Credit
 Credit to [shagu](https://github.com/shagu)   
 Credit to [Grylls](https://github.com/GryllsAddons)  
+Credit to [Syiana](https://github.com/Syiana)   
 Code from [ShaguTweaks](https://shagu.org/ShaguTweaks/)    
 Code from [ShaguTweaks-mods](https://github.com/GryllsAddons/ShaguTweaks-mods)   
+Code from [SUI](https://github.com/Syiana/SUI)   
 Code from [pfUI](https://shagu.org/pfUI/)    
 Code from [zUI](https://github.com/Ko0z/zUI)
 
