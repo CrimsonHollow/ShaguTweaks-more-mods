@@ -31,9 +31,13 @@ module.enable = function(self)
     -- xp and reputation bar
     MainMenuXPBarTexture2, MainMenuXPBarTexture3,
    ReputationWatchBarTexture2, ReputationWatchBarTexture3,
+
     -- actionbar backgrounds
+	-- MainMenuBarTexture0,
+    -- MainMenuBarTexture1,
     MainMenuBarTexture2, MainMenuBarTexture3,
-    MainMenuMaxLevelBar2, MainMenuMaxLevelBar3,
+    MainMenuMaxLevelBar2, MainMenuMaxLevelBar3, 
+	--BonusActionBarTexture0,
     -- micro button panel
     CharacterMicroButton, SpellbookMicroButton, TalentMicroButton,
     QuestLogMicroButton, MainMenuMicroButton, SocialsMicroButton,
@@ -50,6 +54,7 @@ module.enable = function(self)
     ReputationWatchBarTexture2, ReputationWatchBarTexture3,
     ReputationXPBarTexture2, ReputationXPBarTexture3,
     SlidingActionBarTexture0, SlidingActionBarTexture1,
+	
   }
 
   -- button textures that shall be set empty
@@ -87,17 +92,13 @@ module.enable = function(self)
   ReputationWatchBar:SetPoint("BOTTOM", MainMenuExpBar, "TOP", 0, 0)
   ReputationWatchBarTexture0:SetPoint("LEFT", ReputationWatchBar, "LEFT")
   ReputationWatchBarTexture1:SetPoint("RIGHT", ReputationWatchBar, "RIGHT")
-
+  
   -- move menubar texture background
-  BonusActionBarFrame:Show()
-  MainMenuBarTexture0:Hide()
-  MainMenuBarTexture1:Hide()
   MainMenuMaxLevelBar0:SetPoint("LEFT", MainMenuBarArtFrame, "LEFT")
   MainMenuBarTexture0:SetPoint("LEFT", MainMenuBarArtFrame, "LEFT")
   MainMenuBarTexture1:SetPoint("RIGHT", MainMenuBarArtFrame, "RIGHT")
 
   -- move gryphon textures
-  --MainMenuBarLeftEndCap:SetTexture("Interface\\Addons\\ShaguTweaks\\img\\uiactionbar2x.blp")
   MainMenuBarLeftEndCap:SetPoint("RIGHT", MainMenuBarArtFrame, "LEFT", 30, 0)
   MainMenuBarRightEndCap:SetPoint("LEFT", MainMenuBarArtFrame, "RIGHT", -30, 0)
 
@@ -115,7 +116,7 @@ module.enable = function(self)
     -- move bars above xp bar if xp or reputation is tracked
 	MainMenuBarLeftEndCap:ClearAllPoints()
 	MainMenuBarRightEndCap:ClearAllPoints()
-    MainMenuBar:ClearAllPoints()
+   -- MainMenuBar:ClearAllPoints()
    if MainMenuExpBar:IsVisible() or ReputationWatchBar:IsVisible() then
 	local anchor = GetWatchedFactionInfo() and ReputationWatchBar or MainMenuExpBar
 	
@@ -144,19 +145,7 @@ module.enable = function(self)
 	ReputationWatchStatusBar:ClearAllPoints()
 	ReputationWatchStatusBar:SetPoint("BOTTOM", WorldFrame, "BOTTOM", 0, 13)
 	
-	BonusActionBarFrame:SetAlpha(0)
-	BonusActionButton1:SetAlpha(1)
-	BonusActionButton2:SetAlpha(1)
-	BonusActionButton3:SetAlpha(1)
-	BonusActionButton4:SetAlpha(1)
-	BonusActionButton5:SetAlpha(1)
-	BonusActionButton6:SetAlpha(1)
-	BonusActionButton7:SetAlpha(1)
-	BonusActionButton8:SetAlpha(1)
-	BonusActionButton9:SetAlpha(1)
-	BonusActionButton10:SetAlpha(1)
-	BonusActionButton11:SetAlpha(1)
-	BonusActionButton12:SetAlpha(1)
+	
 	-- MainMenuBarLeftEndCap:ClearAllPoints()
 	-- MainMenuBarRightEndCap:ClearAllPoints()
 	-- MainMenuBarLeftEndCap:SetPoint("RIGHT", MainMenuBarArtFrame, "LEFT", 30, 20)
@@ -192,39 +181,39 @@ module.enable = function(self)
     offset = anchor == ActionButton1 and offset + 6 or offset
     BuffButton0:SetPoint("BOTTOMLEFT", anchor, "TOPLEFT", 453, 4 + pet_offset)
 	
-	-- add button border
-    local _G = ShaguTweaks.GetGlobalEnv()
-    local actionBars = {'Action' , 'BonusAction', 'MultiBarBottomLeft'}
-    local f = CreateFrame("Frame", nil, UIParent)
-    for k, v in pairs(actionBars) do
-        for i = 1, NUM_ACTIONBAR_BUTTONS  do
-          local button = _G[v..'Button'..i]
-          button.bg = f:CreateTexture()
-          button.bg:SetWidth(64)
-          button.bg:SetHeight(64)
-          button.bg:SetPoint("CENTER", button, "CENTER",0 , 0)  
-          button.bg:SetTexture("Interface\\Buttons\\UI-Quickslot2")
-          button.bg:SetVertexColor(1, 1, 1, 0.4)
-		end
-		button:SetFrameStrata("LOW")
-    end
+	 -- -- add button border
+     -- local _G = ShaguTweaks.GetGlobalEnv()
+     -- local actionBars = {'Action' , 'MultiBarBottomLeft'}
+     -- local f = CreateFrame("Frame", nil, UIParent)
+     -- for k, v in pairs(actionBars) do
+         -- for i = 1, NUM_ACTIONBAR_BUTTONS  do
+          -- local button = _G[v..'Button'..i]
+          -- button.bg = f:CreateTexture()
+          -- button.bg:SetWidth(64)
+          -- button.bg:SetHeight(64)
+          -- button.bg:SetPoint("CENTER", button, "CENTER",0 , 0)  
+          -- button.bg:SetTexture("Interface\\Buttons\\UI-Quickslot2")
+          -- button.bg:SetVertexColor(1, 1, 1, 0.4)
+		 -- end
+		-- button:SetFrameStrata("LOW")
+     -- end
 	
-	-- add button background
-    local _G = ShaguTweaks.GetGlobalEnv()
-    local actionBars = {'Action' , 'BonusAction' , 'MultiBarBottomLeft'}
-    local f = CreateFrame("Frame", nil, UIParent)
-    for k, v in pairs(actionBars) do
-        for i = 1, NUM_ACTIONBAR_BUTTONS  do
-          local button = _G[v..'Button'..i]
-          button.bg = f:CreateTexture()
-          button.bg:SetWidth(62)
-          button.bg:SetHeight(62)
-          button.bg:SetPoint("CENTER", button, "CENTER",11 , -11)  
-		  button.bg:SetTexture("Interface\\Addons\\ShaguTweaks-more-mods\\img\\UI-Slot-background")
-          button.bg:SetVertexColor(1, 1, 1, 0.3)
-		end
-		button:SetFrameStrata("BACKGROUND")
-    end
+	 -- -- add button background
+     -- local _G = ShaguTweaks.GetGlobalEnv()
+     -- local actionBars = {'Action' , 'MultiBarBottomLeft'}
+     -- local f = CreateFrame("Frame", nil, UIParent)
+     -- for k, v in pairs(actionBars) do
+         -- for i = 1, NUM_ACTIONBAR_BUTTONS  do
+           -- local button = _G[v..'Button'..i]
+           -- button.bg = f:CreateTexture()
+           -- button.bg:SetWidth(62)
+           -- button.bg:SetHeight(62)
+           -- button.bg:SetPoint("CENTER", button, "CENTER",11 , -11)  
+		   -- button.bg:SetTexture("Interface\\Addons\\ShaguTweaks-more-mods\\img\\UI-Slot-background")
+           -- button.bg:SetVertexColor(1, 1, 1, 0.3)
+		 -- end
+		 -- button:SetFrameStrata("BACKGROUND")
+     -- end
 	
 
     -- move castbar ontop of other bars

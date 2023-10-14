@@ -17,3 +17,5 @@ mods\dragonflight-castbar.lua
 mods\buffs-above-actionbar.lua
 mods\restyle-ui-deli.lua
 mods\restyle-override.lua
+mods\xp.lua
+mods\hide-actionbar-textures.lua

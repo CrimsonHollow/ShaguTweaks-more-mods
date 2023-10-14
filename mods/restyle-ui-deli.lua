@@ -113,7 +113,7 @@ module.enable = function(self)
             end            
 
             MBB_MinimapButtonFrame:ClearAllPoints()
-            MBB_MinimapButtonFrame:SetPoint("CENTER", Minimap, "BOTTOMLEFT", 0, 0)
+            MBB_MinimapButtonFrame:SetPoint("CENTER", Minimap, "TOPRIGHT", 30, 30)
             lock(MBB_MinimapButtonFrame)           
             
             local function showButton(button)
@@ -362,7 +362,7 @@ module.enable = function(self)
             MiniMapTrackingFrame:SetPoint("TOPLEFT", Minimap, "TOPLEFT", -2, 1)
             MiniMapTrackingFrame:SetScale(0.9)
             MiniMapTrackingBorder:SetTexture(nil)
-			Minimap:SetWidth(252)
+			Minimap:SetWidth(192.6)
 			Minimap:SetHeight(192.6)
 
             -- Mail
