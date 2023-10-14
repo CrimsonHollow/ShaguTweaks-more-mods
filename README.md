@@ -11,6 +11,7 @@ Code from [ShaguTweaks](https://shagu.org/ShaguTweaks/)
 Code from [ShaguTweaks-mods](https://github.com/GryllsAddons/ShaguTweaks-mods)   
 Code from [pfUI](https://shagu.org/pfUI/)    
 Code from [zUI](https://github.com/Ko0z/zUI)
+Code from  [ModUI](https://github.com/obble/modui)
 
 ## Installation
 #### This addon requires [ShaguTweaks](https://shagu.org/ShaguTweaks/) and [ShaguTweaks-mods](https://github.com/GryllsAddons/ShaguTweaks-mods) to be installed.    
