@@ -24,16 +24,22 @@ module.enable = function(self)
   PlayerFrameTexture:SetTexture[[Interface\Addons\ShaguTweaks-more-mods\img\UI-TargetingFrame]]  
   PlayerStatusTexture:SetTexture[[Interface\Addons\ShaguTweaks-more-mods\img\UI-Player-Status]]  
   PlayerFrameHealthBar:SetPoint("TOPLEFT", 106, -22)
+
   PlayerFrameHealthBar:SetWidth(120)
   PlayerFrameHealthBar:SetHeight(30)
-
+  PlayerFrameManaBar:SetWidth(120)
+  PlayerFrameBackground:SetWidth(122)
   PlayerStatusTexture:SetTexture(addonpath .. "\\img\\UI-Player-Status")
 
   TargetFrameTexture:SetTexture[[Interface\Addons\ShaguTweaks-more-mods\img\UI-TargetingFrame2]]  
-  TargetFrameHealthBar:SetPoint("TOPRIGHT", -106, -22)
+  TargetFrameHealthBar:SetPoint("TOPRIGHT", -103, -22)
   TargetFrameHealthBar:SetHeight(30)
-  TargetFrameHealthBar:SetWidth(120)
-  --TargetFramePowerBar:SetWidth(120)
+  TargetFrameHealthBar:SetWidth(123)
+  TargetFrameManaBar:SetPoint("TOPRIGHT", -103, -52)
+  TargetFrameManaBar:SetWidth(123)
+  TargetFrameBackground:SetPoint("TOPRIGHT", -103, -22)
+  TargetFrameBackground:SetWidth(123)
+  --TargetFrame:SetWidth(120)
   -- TargetLevelText:ClearAllPoints()
   -- TargetLevelText:SetPoint("BOTTOMRIGHT",TargetFrameHealthBar, 65, -20)
 
