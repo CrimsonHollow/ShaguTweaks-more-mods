@@ -24,13 +24,18 @@ module.enable = function(self)
   PlayerFrameTexture:SetTexture[[Interface\Addons\ShaguTweaks-more-mods\img\UI-TargetingFrame]]  
   PlayerStatusTexture:SetTexture[[Interface\Addons\ShaguTweaks-more-mods\img\UI-Player-Status]]  
   PlayerFrameHealthBar:SetPoint("TOPLEFT", 106, -22)
+  PlayerFrameHealthBar:SetWidth(120)
   PlayerFrameHealthBar:SetHeight(30)
 
   PlayerStatusTexture:SetTexture(addonpath .. "\\img\\UI-Player-Status")
 
-  TargetFrameTexture:SetTexture[[Interface\Addons\ShaguTweaks-more-mods\img\UI-TargetingFrame]]  
+  TargetFrameTexture:SetTexture[[Interface\Addons\ShaguTweaks-more-mods\img\UI-TargetingFrame2]]  
   TargetFrameHealthBar:SetPoint("TOPRIGHT", -106, -22)
   TargetFrameHealthBar:SetHeight(30)
+  TargetFrameHealthBar:SetWidth(120)
+  --TargetFramePowerBar:SetWidth(120)
+  -- TargetLevelText:ClearAllPoints()
+  -- TargetLevelText:SetPoint("BOTTOMRIGHT",TargetFrameHealthBar, 65, -20)
 
 
   local original = TargetFrame_CheckClassification
@@ -45,7 +50,7 @@ module.enable = function(self)
     elseif ( classification == "rare"  ) then
       TargetFrameTexture:SetTexture[[Interface\Addons\ShaguTweaks-more-mods\img\UI-TargetingFrame-Elite_Rare]]
     else
-      TargetFrameTexture:SetTexture[[Interface\Addons\ShaguTweaks-more-mods\img\UI-TargetingFrame]]  
+      TargetFrameTexture:SetTexture[[Interface\Addons\ShaguTweaks-more-mods\img\UI-TargetingFrame2]]  
     end
   end
 

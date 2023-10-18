@@ -21,7 +21,7 @@ module.enable = function(self)
 
     orig.ReputationWatchBar_Update = ReputationWatchBar_Update
 
-    MainMenuExpBar:SetWidth(1021) MainMenuExpBar:SetHeight(10)
+    MainMenuExpBar:SetWidth(511) MainMenuExpBar:SetHeight(10)
     MainMenuExpBar:ClearAllPoints() MainMenuExpBar:SetPoint('TOP', MainMenuBar, 0, -4)
     MainMenuExpBar:SetBackdrop(BACKDROP)
     MainMenuExpBar:SetBackdropColor(0, 0, 0, 1)
@@ -35,7 +35,7 @@ module.enable = function(self)
     MainMenuExpBar.rep:SetFont(STANDARD_TEXT_FONT, 12, 'OUTLINE')
     MainMenuExpBar.rep:SetPoint('RIGHT', MainMenuBarExpText, 'LEFT')
 
-    ReputationWatchStatusBar:SetWidth(1021)
+    ReputationWatchStatusBar:SetWidth(511)
     ReputationWatchStatusBar:SetBackdrop(BACKDROP)
     ReputationWatchStatusBar:SetBackdropColor(0, 0, 0, 1)
 
