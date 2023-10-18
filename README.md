@@ -54,16 +54,13 @@ Textures from Nilf from TWOW Discord
 - **Big Healthbar New Textures**
   *My version of shagus Big Health module with Dragonflight textures. DO NOT USE WITH BIG HEALTH AT THE SAME TIME*
 
+- **MODUI XP BAR**
+  *Simply a port from MODUI. DO NOT USE WITH IMPROVED XP BAR*
+
 
 ## Known Issues
 
 *Reputation tracking. If u care about tracking rep do not use Reduced Actionbar Plus atm.*
-
-*When u login ur bottom actionbar might be missing. Do /reload*
-
-*Always show actionbars. It will mess with Reduced Actionbar Plus. A workaround is to go to the lines 195 and 212 and change the SetAlpha from 0 to 1.*
-
-*Pet bars being gone. If its a temporary edit make a macro with with /script PetActionBarFrame:Show() else if u want it to be perma on go to Reduced Actionbar Plus on line 139 and delete the line. (will mess with ur buffs position)*
 
 *Weird party/raid frames. Im a solo player doing the hardcore challenge. I havent grouped enough to test/modify this option enough. Dont use my mods if there is a problem with that.*
 
