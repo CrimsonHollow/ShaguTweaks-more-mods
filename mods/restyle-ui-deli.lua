@@ -362,8 +362,9 @@ module.enable = function(self)
             MiniMapTrackingFrame:SetPoint("TOPLEFT", Minimap, "TOPLEFT", -2, 1)
             MiniMapTrackingFrame:SetScale(0.9)
             MiniMapTrackingBorder:SetTexture(nil)
+			Minimap:SetMaskTexture[[Interface\Addons\ShaguTweaks-more-mods\img\MinimapMask]]
 			Minimap:SetWidth(192.6)
-			Minimap:SetHeight(192.6)
+			 Minimap:SetHeight(172.6)
 
             -- Mail
             MiniMapMailFrame:ClearAllPoints()

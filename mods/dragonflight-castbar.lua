@@ -2,6 +2,7 @@ local module = ShaguTweaks:register({
     title = "Dragonflight Castbar",
     description = "Its the improved castbar module with Dragonflight Textures",
     expansions = { ["vanilla"] = true, ["tbc"] = nil },
+	category = "Dragonflight",
     enabled = nil,
 })
 

@@ -1,7 +1,7 @@
 local _G = ShaguTweaks.GetGlobalEnv()
 
 local module = ShaguTweaks:register({
-    title = "Xp",
+    title = "ModUI XP BAR",
     description = "Copy of ModUI XP BAr.",
     expansions = { ["vanilla"] = true, ["tbc"] = nil },
     category = "Action Bar",

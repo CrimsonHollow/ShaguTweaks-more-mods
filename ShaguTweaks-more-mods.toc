@@ -19,3 +19,7 @@ mods\restyle-ui-deli.lua
 mods\restyle-override.lua
 mods\xp.lua
 mods\hide-actionbar-textures.lua
+mods\hide-petbar.lua
+mods\buffs-to-actionbars.lua
+mods\hd-actionbar-textures.lua
+mods\unitframes-bighealth-new.lua

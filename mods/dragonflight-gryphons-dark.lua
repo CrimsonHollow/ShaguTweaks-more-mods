@@ -4,7 +4,7 @@ local module = ShaguTweaks:register({
     title = "Dragonflight-gryphons-dark",
     description = "Change the action bar gryphons dragonflight ones(Dark mode).",
     expansions = { ["vanilla"] = true, ["tbc"] = nil },
-    category = "Action Bar",
+    category = "Dragonflight",
     enabled = nil,
 })
 

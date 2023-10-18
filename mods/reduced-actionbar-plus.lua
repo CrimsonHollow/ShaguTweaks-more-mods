@@ -137,7 +137,7 @@ module.enable = function(self)
 	MainMenuExpBar:SetPoint("BOTTOM", WorldFrame, "BOTTOM", 0, 13)
 	--ActionButton1:ClearAllPoints()
 	--ActionButton1:SetPoint("BOTTOM", WorldFrame, "BOTTOM", 0, 18)
-	PetActionBarFrame:Hide()
+	
 
 	--MainMenuBar:SetPoint("BOTTOM", WorldFrame, "BOTTOM", 0, 28)
 	MultiBarBottomLeft:ClearAllPoints()
