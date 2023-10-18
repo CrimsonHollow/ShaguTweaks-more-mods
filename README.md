@@ -51,6 +51,10 @@ Textures from Nilf from TWOW Discord
 - **Restyle UI Deli**
   *My own version of the restyle module.DO NOT USE WITH RESTYLE UI MOD AT THE SAME TIME*
 
+- **Big Healthbar New Textures**
+  *My version of shagus Big Health module with Dragonflight textures. DO NOT USE WITH BIG HEALTH AT THE SAME TIME*
+
+
 ## Known Issues
 
 *Reputation tracking. If u care about tracking rep do not use Reduced Actionbar Plus atm.*
