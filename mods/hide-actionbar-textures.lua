@@ -12,4 +12,5 @@ module.enable = function(self)
     MainMenuBarTexture0:Hide()
 	MainMenuBarTexture1:Hide()
 	BonusActionBarTexture0:Hide()
+	BonusActionBarTexture1:Hide()
 end
