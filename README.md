@@ -95,4 +95,6 @@ Textures from Nifl from TWOW Discord
 
 ![image](https://github.com/CrimsonHollow/ShaguTweaks-more-mods/assets/22963563/cc9915ba-ae82-4d7b-9380-5c95e46a256b)
 
+![image](https://github.com/CrimsonHollow/ShaguTweaks-more-mods/assets/22963563/c8689290-d67b-42dc-ba82-5f67b9ca8abe)
+
 
