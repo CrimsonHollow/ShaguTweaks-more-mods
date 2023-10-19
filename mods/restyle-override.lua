@@ -7,7 +7,7 @@
 -- This table holds the meta-data of the module:
 local module = ShaguTweaks:register({
   title = "Restyle Override",
-  description = "Moves the buffs above your actionbars",
+  description = "Overrides My Changes to BIG HEALTH",
   expansions = { ["vanilla"] = true, ["tbc"] = true },
   category = nil,
   enabled = nil,

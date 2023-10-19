@@ -9,6 +9,13 @@ local module = ShaguTweaks:register({
 })
 
 module.enable = function(self)
+
+local hookUIParent_ManageFramePositions = UIParent_ManageFramePositions
+  UIParent_ManageFramePositions = function(a1, a2, a3)
+    -- run original function
+    hookUIParent_ManageFramePositions(a1, a2, a3)
+
+
     BuffButton0:ClearAllPoints()
     local offset = 0
     local anchor = ActionButton1
@@ -18,5 +25,5 @@ module.enable = function(self)
     offset = anchor == ActionButton1 and ( MainMenuExpBar:IsVisible() or ReputationWatchBar:IsVisible() ) and 6 or 0
     offset = anchor == ActionButton1 and offset + 6 or offset
     BuffButton0:SetPoint("BOTTOMLEFT", anchor, "TOPLEFT", 453, 4 + pet_offset)
-	
+	end
 end

@@ -23,16 +23,16 @@ end
 module.enable = function(self)
   PlayerFrameTexture:SetTexture[[Interface\Addons\ShaguTweaks-more-mods\img\UI-TargetingFrame]]  
   PlayerStatusTexture:SetTexture[[Interface\Addons\ShaguTweaks-more-mods\img\UI-Player-Status]]  
-  PlayerFrameHealthBar:SetPoint("TOPLEFT", 106, -22)
-
+  PlayerFrameHealthBar:SetPoint("TOPLEFT", 106, -23)
+ 
   PlayerFrameHealthBar:SetWidth(120)
   PlayerFrameHealthBar:SetHeight(30)
   PlayerFrameManaBar:SetWidth(120)
   PlayerFrameBackground:SetWidth(122)
-  PlayerStatusTexture:SetTexture(addonpath .. "\\img\\UI-Player-Status")
+  PlayerStatusTexture:SetTexture[[Interface\Addons\ShaguTweaks-more-mods\img\UI-Player-Status]]
 
   TargetFrameTexture:SetTexture[[Interface\Addons\ShaguTweaks-more-mods\img\UI-TargetingFrame2]]  
-  TargetFrameHealthBar:SetPoint("TOPRIGHT", -103, -22)
+  TargetFrameHealthBar:SetPoint("TOPRIGHT", -103, -23)
   TargetFrameHealthBar:SetHeight(30)
   TargetFrameHealthBar:SetWidth(123)
   TargetFrameManaBar:SetPoint("TOPRIGHT", -103, -52)
@@ -42,7 +42,16 @@ module.enable = function(self)
   --TargetFrame:SetWidth(120)
   -- TargetLevelText:ClearAllPoints()
   -- TargetLevelText:SetPoint("BOTTOMRIGHT",TargetFrameHealthBar, 65, -20)
-
+  
+  
+  TargetofTargetFrame:ClearAllPoints()
+   TargetofTargetFrame:SetPoint("BOTTOM", TargetFrame, 38, -15)
+  
+  
+  
+  PetFrame:ClearAllPoints()
+  PetFrame:SetPoint("BOTTOM", PlayerFrame, -10, -30)
+  PetFrameTexture:SetTexture[[Interface\Addons\ShaguTweaks-more-mods\img\UI-TargetingFrame]]  
 
   local original = TargetFrame_CheckClassification
   function TargetFrame_CheckClassification()

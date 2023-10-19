@@ -61,8 +61,9 @@ module.enable = function(self)
         -- Buffs start with TemporaryEnchantFrame
         -- Debuffs are aligned underneath the TemporaryEnchantFrame    
         TemporaryEnchantFrame:ClearAllPoints()
-        TemporaryEnchantFrame:SetPoint("TOPRIGHT", UIParent, -15, 55)
-    
+        TemporaryEnchantFrame:SetPoint("BOTTOMRIGHT", PlayerFrame, -5, -4)
+		BuffButton16:ClearAllPoints()
+		BuffButton16:SetPoint("TOPRIGHT", UIParent, -40, -40)
         -- prevent TemporaryEnchantFrame from moving
         TemporaryEnchantFrame.ClearAllPoints = function() end
         TemporaryEnchantFrame.SetPoint = function() end
@@ -83,36 +84,14 @@ module.enable = function(self)
         ChatFrame1:SetWidth(w)
         ChatFrame1:SetHeight(h)
         ChatFrame1:ClearAllPoints()
-        ChatFrame1:SetPoint("BOTTOMRIGHT", "UIParent", "BOTTOMRIGHT", -x/2, y)
+        ChatFrame1:SetPoint("BOTTOMRIGHT", "UIParent", -x/2, y)
 
         local found
         local frame
 
-        for i= NUM_CHAT_WINDOWS, 1, -1 do
-            frame = _G["ChatFrame"..i]
-            local tab = _G["ChatFrame"..i.."Tab"]
-            local name = tab:GetText()
-            -- check for "Loot & Spam" chat frame
-            if name == "Loot & Spam" then
-                found = true                
-                break
-            end
-        end
+       
 
-        -- if found then
-            -- FCF_UnDockFrame(ChatFrame3)
-            -- FCF_SetTabPosition(ChatFrame3, 0)
-
-            -- ChatFrame3:ClearAllPoints()
-            -- ChatFrame3:SetPoint("BOTTOMRIGHT", "UIParent", "BOTTOMRIGHT", -x, y)
-            -- ChatFrame3:SetWidth(w)
-            -- ChatFrame3:SetHeight(h)
-            -- ChatFrame3Tab:Hide()
-            -- FCF_SetButtonSide(ChatFrame3, "right")
-            -- ChatFrame3:Show()
-        -- end
-
-        FCF_SelectDockFrame(ChatFrame1)
+      
     end
     
     local events = CreateFrame("Frame", nil, UIParent)	
