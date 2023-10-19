@@ -21,6 +21,14 @@ Textures from Nifl from TWOW Discord
 
 ## Mods
 
+- **Buffs to Actionbars**
+  *Attaches the buffs to the actionbar. (Debuffs should be still in the same spot.)*
+
+- **Hide PetBar**
+  *Hides the Pet Bar in pet classes (they are still there and work fine, just hidden)*
+
+- **Hide Actionbar Textures**
+  *Hides the UI (Actionbar) Textures*
 
 - **Dragonflight Gryphons**
   *Changes the vanilla gryphons to the DF ones. USE ONLY ONE OF THESE MODULES*
