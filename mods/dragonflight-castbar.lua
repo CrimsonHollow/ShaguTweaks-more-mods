@@ -12,14 +12,79 @@ module.enable = function(self)
 	local customfont = addonpath .. "\\fonts\\PROTOTYPE.TTF"
     local UnitCastingInfo = ShaguTweaks.UnitCastingInfo
     local UnitChannelInfo = ShaguTweaks.UnitChannelInfo
+	local hooksecurefunc = ShaguTweaks.hooksecurefunc
 
     local castbar = CreateFrame("Frame", nil, CastingBarFrame)
 	
-	CastingBarFrame:SetStatusBarTexture("Interface\\Addons\\ShaguTweaks-more-mods\\img\\DFCastbar")
+	-- CastingBarFrame:SetHeight(30)
 	
+ CastingBarFrame:SetStatusBarTexture("Interface\\Addons\\ShaguTweaks-more-mods\\img\\Castbar\\CastingBarStandard2")
+ CastingBarBorder:ClearAllPoints()
+ CastingBarBorder:SetPoint("TOPLEFT", CastingBarFrame, "TOPLEFT", -2 , 2)
+ CastingBarBorder:SetPoint("BOTTOMRIGHT", CastingBarFrame, "BOTTOMRIGHT", 2, -2) 
 
-    castbar:Hide()
+ 
+ CastingBarBorder:SetTexture("Interface\\Addons\\ShaguTweaks-more-mods\\img\\Castbar\\CastingBarFrame2")
+ CastingBarSpark:SetTexture("Interface\\Addons\\ShaguTweaks-more-mods\\img\\Castbar\\CastingBarSpark")
+
+
 	
+castbar:Hide()
+	function CastingBarFrame_OnUpdate()
+    if ( this.casting ) then
+        local status = GetTime();
+        if ( status > this.maxValue ) then
+            status = this.maxValue
+        end
+        CastingBarFrameStatusBar:SetValue(status);
+        CastingBarFlash:Hide();
+        local sparkPosition = ((status - this.startTime) / (this.maxValue - this.startTime)) * 250;
+        if ( sparkPosition < 0 ) then
+            sparkPosition = 0;
+        end
+        CastingBarSpark:SetPoint("CENTER", CastingBarFrame, "LEFT", sparkPosition, 2);
+    elseif ( this.channeling ) then
+        local time = GetTime();
+        if ( time > this.endTime ) then
+            time = this.endTime
+        end
+        if ( time == this.endTime ) then
+            this.channeling = nil;
+            this.fadeOut = 1;
+            return;
+        end
+        local barValue = this.startTime + (this.endTime - time);
+        CastingBarFrameStatusBar:SetValue( barValue );
+        CastingBarFlash:Hide();
+        local sparkPosition = ((barValue - this.startTime) / (this.endTime - this.startTime)) * 250;
+        CastingBarSpark:SetPoint("CENTER", CastingBarFrame, "LEFT", sparkPosition, 2);
+    elseif ( GetTime() < this.holdTime ) then
+        return;
+    elseif ( this.flash ) then
+        local alpha = CastingBarFlash:GetAlpha() + CASTING_BAR_FLASH_STEP;
+        if ( alpha < 1 ) then
+            CastingBarFlash:SetAlpha(alpha);
+        else
+            CastingBarFlash:SetAlpha(1.0);
+            this.flash = nil;
+        end
+    elseif ( this.fadeOut ) then
+        local alpha = this:GetAlpha() - CASTING_BAR_ALPHA_STEP;
+        if ( alpha > 0 ) then
+            this:SetAlpha(alpha);
+        else
+            this.fadeOut = nil;
+            this:Hide();
+        end
+    end
+end
+	
+	hooksecurefunc('CastingBarFrame_OnUpdate', function()
+	-- CastingBarFrameStatusBar:SetValue(250)
+	
+    CastingBarFrame:SetWidth(250)
+	CastingBarFrame:SetHeight(18)
+end)
 
     castbar.texture = CreateFrame("Frame", nil, castbar)
     castbar.texture:SetPoint("RIGHT", CastingBarFrame, "LEFT", -10, 2)
@@ -27,16 +92,17 @@ module.enable = function(self)
     castbar.texture:SetHeight(28)
 	
 	
+	
     castbar.texture.icon = castbar.texture:CreateTexture(nil, "BACKGROUND")
     castbar.texture.icon:SetPoint("CENTER", 0, 0)
     castbar.texture.icon:SetWidth(24)
     castbar.texture.icon:SetHeight(24)
-    castbar.texture:SetBackdrop({
-        -- edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
-        edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
-        tile = true, tileSize = 8, edgeSize = 12,
-        insets = { left = 2, right = 2, top = 2, bottom = 2 }
-    })
+     castbar.texture:SetBackdrop({
+         -- edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
+         edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+         tile = true, tileSize = 8, edgeSize = 12,
+         insets = { left = 2, right = 2, top = 2, bottom = 2 }
+     })
     
     if ShaguTweaks.DarkMode then
         castbar.texture:SetBackdropBorderColor( .3, .3, .3, .9)
@@ -61,10 +127,15 @@ module.enable = function(self)
         -- scan for channel spells if no cast was found
         cast, nameSubtext, text, texture, startTime, endTime, isTradeSkill = UnitChannelInfo("player")
         end
-
+			
+			
+			
         local alpha = CastingBarFrame:GetAlpha()
         castbar:SetAlpha(alpha)
-
+		CastingBarFlash:Hide()
+		
+		
+		
         if cast then
             local channel = UnitChannelInfo(name)
             local duration = endTime - startTime
@@ -96,6 +167,8 @@ module.enable = function(self)
             end
         end
     end)
+	
+	
 
     local events = CreateFrame("Frame", nil, UIParent)
     events:RegisterEvent("SPELLCAST_START")
